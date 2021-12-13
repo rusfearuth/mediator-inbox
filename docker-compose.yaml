@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  inbox-dev:
+    build:
+      context: .
+      dockerfile: docker/inbox-server-dev.dockerfile
+    ports:
+      - "5050:5050"
+  inbox-prod:
+    build:
+      context: .
+      dockerfile: docker/inbox-server-prod.dockerfile
+    ports:
+      - "8080:5050"
