@@ -12,4 +12,4 @@ services:
       context: .
       dockerfile: docker/inbox-server-prod.dockerfile
     ports:
-      - "8080:5050"
+      - "5050:5050"
